@@ -4,3 +4,7 @@ LABEL "com.github.actions.name"="Hadolint"
 LABEL "com.github.actions.description"="Execute hadolint on a repo"
 LABEL "com.github.actions.icon"="shield"
 LABEL "com.github.actions.color"="green"
+
+COPY "entrypoint.sh" "/entrypoint.sh"
+
+ENTRYPOINT ["/entrypoint.sh"]
